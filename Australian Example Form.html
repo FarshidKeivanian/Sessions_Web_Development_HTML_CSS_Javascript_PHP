@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Australian Example Form</title>
+</head>
+<body>
+
+<form action="/submit_form" method="post">
+  <p>
+    <label for="stateSelect">Choose a state:</label>
+    <select id="stateSelect" name="state">
+      <option value="NSW">New South Wales</option>
+      <option value="QLD">Queensland</option>
+      <option value="SA">South Australia</option>
+      <option value="TAS">Tasmania</option>
+      <option value="VIC">Victoria</option>
+      <option value="WA">Western Australia</option>
+    </select>
+  </p>
+  
+  <p>Continent:
+    <input type="radio" id="oceania" name="continent" value="Oceania" checked>
+    <label for="oceania">Oceania</label>
+    
+    <input type="radio" id="other" name="continent" value="Other">
+    <label for="other">Other</label>
+  </p>
+  
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
