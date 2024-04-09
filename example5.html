@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selectors Example</title>
+    <style>
+        /* Element Selector */
+        p {
+            color: gray;
+        }
+
+        /* Grouped Selectors */
+        h1, h2, .highlight {
+            color: green;
+        }
+
+        /* ID Selector */
+        #special {
+            font-style: italic;
+        }
+
+        /* Pseudo-class Selectors */
+        a:link {
+            color: blue;
+        }
+        a:visited {
+            color: purple;
+        }
+        a:hover {
+            color: orange;
+        }
+        a:active {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Main Heading</h1>
+<h2>Sub Heading</h2>
+<p>This is a paragraph.</p>
+<p id="special">This paragraph has a special style.</p>
+<p class="highlight">This paragraph is highlighted.</p>
+
+<!-- Pseudo-class Selectors for links -->
+<a href="https://www.example.com">Visit Example.com</a>
+
+</body>
+</html>

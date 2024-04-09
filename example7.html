@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Box Model, Background, and Text Example</title>
+<style>
+  body {
+    background-color: #f4f4f8; /* Light grey background */
+    margin: 0; /* No margin for the body */
+    padding: 20px; /* Padding inside the body */
+    font-family: Arial, sans-serif; /* Set default font */
+  }
+  .box {
+    width: 200px; /* Width of the box */
+    padding: 20px; /* Padding inside the box */
+    border: 5px solid #333; /* Solid border, 5px width, dark color */
+    margin: 20px; /* Margin outside the box */
+    background-color: #fff; /* White background for the box */
+    background-image: url('path-to-image.jpg'); /* Background image for the box */
+    background-repeat: no-repeat; /* The background image will not repeat */
+    background-position: center; /* The background image will be centered */
+    /* Additional properties for text inside the box */
+    color: #333; /* Dark text color */
+    text-align: center; /* Center text inside the box */
+  }
+  .box p {
+    margin-bottom: 15px; /* Spacing between paragraphs */
+    line-height: 1.5; /* Line spacing */
+  }
+  /* Example of a paragraph with a specific class for additional styling */
+  .box .highlight {
+    background-color: #e9e9e9; /* Light grey background for highlighted text */
+    font-weight: bold; /* Make text bold */
+    padding: 5px; /* Padding around the text */
+    border-left: 4px solid #333; /* A left border to highlight text */
+  }
+</style>
+</head>
+<body>
+  <div class="box">
+    <p>This is some content inside the box.</p>
+    <p class="highlight">This is a highlighted paragraph.</p>
+    <p>More content follows here.</p>
+  </div>
+</body>
+</html>
