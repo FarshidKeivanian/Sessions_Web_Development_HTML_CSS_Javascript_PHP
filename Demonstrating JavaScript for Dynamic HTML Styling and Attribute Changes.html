@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Apply basic styling to headings and paragraphs */
+        body {
+            font-family: Arial, sans-serif; /* Changes the font style */
+        }
+        h2 {
+            color: navy; /* Sets color of h2 headings */
+        }
+        p {
+            color: green; /* Sets color of paragraph text */
+        }
+    </style>
+</head>
+<body>
+    <h2>Embedded JavaScript</h2>
+
+    <p>Example</p>
+    <p>JavaScript can change styles:</p>
+    <p id="demo">This text will change color, size, and background.</p>
+
+    <p>Example</p>
+    <p>JavaScript can change attributes:</p>
+    <img id="image" src="placeholder.gif" alt="Image will change to picture.gif">
+
+    <script type="text/javascript">
+        // JavaScript to change text content and style of the paragraph with id 'demo'
+        document.getElementById("demo").style.fontSize = "25px";
+        document.getElementById("demo").style.color = "red";
+        document.getElementById("demo").style.backgroundColor = "yellow";
+
+        // JavaScript to change the source attribute of the image with id 'image'
+        document.getElementById("image").src = "animatedgif.gif";
+    </script>
+</body>
+</html>
