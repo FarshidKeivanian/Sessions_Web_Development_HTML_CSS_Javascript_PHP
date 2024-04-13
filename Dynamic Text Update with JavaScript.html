@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Apply basic styling to headings and paragraphs */
+        body {
+            font-family: Arial, sans-serif; /* Changes the font style */
+        }
+        h2 {
+            color: navy; /* Sets color of h2 headings */
+        }
+        p {
+            color: green; /* Sets color of paragraph text */
+        }
+    </style>
+</head>
+<body>
+    <h2>Use JavaScript to Change Text</h2>
+    <p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+    <p id="demo"></p> <!-- Placeholder paragraph for JavaScript to target -->
+    
+    <script type="text/javascript">
+        // JavaScript to change text content of the paragraph with id 'demo'
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    </script>
+</body>
+</html>
