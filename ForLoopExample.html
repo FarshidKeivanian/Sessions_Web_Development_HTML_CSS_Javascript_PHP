@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For Loop Example</title>
+    <style>
+        body {
+            background-color: #f4f4f8; /* Light grey background from example 6 previous session*/
+            margin: 0;
+            padding: 20px;
+        }
+
+        .output {
+            color: gray; /* Color styling from example 5 previous session*/
+            font-style: italic; /* Italic styling from example 5 previous session*/
+            width: 200px; /* Box styling from example 6 previous session*/
+            padding: 20px;
+            border: 5px solid #333;
+            margin: 20px auto; /* Centering the box */
+            background-color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>For Loop Output:</h1>
+    <div id="output" class="output"></div>
+
+    <script>
+        var output = '';
+        for (var i = 0; i < 10; i++) { // Using a for loop as requested
+            output += i + ' ';
+        }
+
+        document.getElementById('output').textContent = output; // Display the numbers on the web page
+    </script>
+</body>
+</html>
