@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>While Loop Example</title>
+</head>
+<body>
+    <h1>While Loop Output:</h1>
+    <div id="output"></div>
+
+    <script>
+        var i = 0; // Initialize the loop control variable
+        var output = '';
+
+        while(i < 10) { // Test the loop control variable
+            output += i + ' '; // Add the current number to the output string
+            i++; // Increment the loop control variable
+        }
+
+        document.getElementById('output').textContent = output; // Display the numbers on the web page
+    </script>
+</body>
+</html>
