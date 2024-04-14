@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Power Function Example</title>
+</head>
+<body>
+    <h1>Calculate Power</h1>
+    <label for="base">Enter base number (x):</label>
+    <input type="number" id="base" value="2">
+    <label for="exponent">Enter exponent number (y):</label>
+    <input type="number" id="exponent" value="10">
+    <button onclick="displayPower()">Calculate Power</button>
+    <h2>Result: <span id="result"></span></h2>
+
+    <script>
+        function power(x, y) {
+            var pow = 1;
+            for (var i = 0; i < y; i++) {
+                pow *= x;
+            }
+            return pow;
+        }
+
+        function displayPower() {
+            var x = document.getElementById('base').value;
+            var y = document.getElementById('exponent').value;
+            var result = power(x, y);
+            document.getElementById('result').textContent = result;
+        }
+    </script>
+</body>
+</html>
