@@ -1,0 +1,39 @@
+/* Add a CSS comment with your name and the current date */
+/* Your Name - Date */
+
+body {
+    color: #000000;
+    background-color: #D9F1C1;
+    font-family: "Times New Roman", serif;
+}
+
+#outerwrapper {
+    width: 80%;
+    margin: 0 auto; /* This will center the div on the page */
+}
+
+header, nav, footer {
+    font-family: Calibri, Arial, sans-serif;
+}
+
+#main {
+    font-family: Garamond, "Times New Roman", serif;
+    background-color: #F0F9E6;
+    padding: 10px;
+}
+
+img {
+    float: left;
+    margin-right: 2%; /* Creates space between the image and the text */
+}
+
+nav {
+    clear: both; /* Ensures that the nav element clears the floated image */
+}
+
+footer {
+    font-size: 0.75em;
+    text-align: center; /* Centers the text within the footer */
+}
+
+/* Additional styles can be added as needed */
