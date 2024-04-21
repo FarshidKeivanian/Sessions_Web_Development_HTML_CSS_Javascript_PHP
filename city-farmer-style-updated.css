@@ -1,63 +1,80 @@
-/* Updated CSS content to more closely match the styling of the first image */
 body {
     color: #333;
-    background-color: #e6e6e6; /* Matching the light sky color */
+    background-color: #87CEEB; /* Adjusted to sky blue color from the image */
     font-family: "Arial", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100vh; /* Full viewport height */
 }
+
 #outerwrapper {
     display: flex;
-    background-color: #f3f0d7; /* The main content background */
-    max-width: 1200px; /* Approximate max width based on the image */
-    margin: 20px auto; /* Center the wrapper with some margin */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
-    overflow: hidden; /* Ensures the wrapper contains floated elements */
-}
-header {
+    flex-direction: row; /* Sidebar and main content side by side */
+    background-color: #f3f0d7; /* The main content background color */
     width: 100%;
-    position: relative; /* Position relative for absolute positioned children */
+    max-width: 1200px; /* Adjusted to content width */
+    height: 100%; /* Full height */
+    margin: 0 auto; /* Center the wrapper */
+    box-shadow: none; /* Remove the shadow if not needed */
 }
+
+header {
+    background-color: #f3f0d7; /* Matching the header background with main content */
+    width: auto; /* Adjust width to content */
+    padding: 10px;
+}
+
 .logo {
-    position: absolute; /* Absolute position within the header */
-    top: 20px;
-    left: 20px;
-    width: auto;
-    height: 80px; /* Adjusted height */
+    width: 100px; /* Adjust logo size */
+    height: auto; /* Keep aspect ratio */
 }
+
 header h1, header h2 {
-    position: absolute;
-    left: 120px; /* Space for the logo */
-    top: 30px; /* Align with the logo */
+    display: inline-block; /* Align with the logo */
+    margin-left: 10px; /* Spacing from the logo */
+    vertical-align: top; /* Align text with the top of the logo */
 }
+
 #sidebar {
-    background-color: rgba(255, 255, 255, 0.5); /* Translucent sidebar */
-    width: 20%; /* Sidebar width */
-    padding: 20px;
+    background-color: #ffffff; /* White background */
+    width: 200px; /* Adjust sidebar width */
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Align nav items vertically */
 }
+
 #main {
-    width: 80%; /* Main content width */
+    flex-grow: 1; /* Take the remaining width */
+    background-color: #f3f0d7; /* Adjust the main content background */
     padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Space out the content */
 }
+
 .main-image {
-    width: auto; /* Full width of the content area */
-    height: 300px; /* Adjust to match the image */
-    margin: 20px 0;
+    width: 100%; /* Full width */
+    height: auto; /* Adjust height to maintain aspect ratio */
+    align-self: flex-end; /* Align the image to the bottom */
+    margin: 20px 0; /* Space above the image */
 }
+
 ul {
-    list-style-type: none;
     padding: 0;
     margin: 0;
+    list-style-type: none; /* Remove bullet points */
 }
+
 ul li {
-    margin-bottom: 10px; /* Space between list items */
+    margin-bottom: 5px; /* Reduced space between list items */
 }
+
 footer {
     font-size: 0.75em;
     text-align: center;
     background-color: #D3D3D3;
     padding: 10px;
     width: 100%;
-    position: relative; /* Changed to relative for natural flow */
+    position: relative; /* Position relative */
 }
