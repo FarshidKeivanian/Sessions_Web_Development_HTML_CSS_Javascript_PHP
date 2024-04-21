@@ -1,75 +1,75 @@
-body {
-    color: #333;
-    background-color: #87CEEB; /* Adjusted to sky blue color from the image */
-    font-family: "Arial", sans-serif;
+/* Reset default styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 100vh; /* Full viewport height */
+}
+
+body {
+    color: #333;
+    background-color: #87CEEB; /* Light sky blue */
+    font-family: "Arial", sans-serif;
 }
 
 #outerwrapper {
-    display: flex;
-    flex-direction: row; /* Sidebar and main content side by side */
-    background-color: #f3f0d7; /* The main content background color */
-    width: 100%;
-    max-width: 1200px; /* Adjusted to content width */
-    height: 100%; /* Full height */
-    margin: 0 auto; /* Center the wrapper */
-    box-shadow: none; /* Remove the shadow if not needed */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Align children side by side */
+    align-items: flex-start; /* Align children to the top of the container */
+    background-color: #f3f0d7; /* Light beige background */
+    width: 100%; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
 }
 
 header {
-    background-color: #f3f0d7; /* Matching the header background with main content */
-    width: 100%; /* Full width */
-    padding: 10px;
-    display: flex; /* Use flex to align logo and text */
-    align-items: center; /* Center items vertically */
+    display: flex;
+    flex-direction: column; /* Stack the logo and text vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 20px; /* Add some padding */
+    background-color: transparent; /* No background */
+    flex: 0 0 250px; /* Do not grow or shrink, set basis to 250px */
+}
+
+.header-content {
+    text-align: center; /* Center the header text */
 }
 
 .logo {
-    width: 100px; /* Adjust logo size */
-    height: auto; /* Keep aspect ratio */
-}
-
-header h1, header h2 {
-    display: inline-block; /* Align with the logo */
-    margin-left: 10px; /* Spacing from the logo */
-    vertical-align: top; /* Align text with the top of the logo */
+    width: 120px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
 }
 
 #sidebar {
     background-color: #ffffff; /* White background */
-    width: 200px; /* Adjust sidebar width */
-    padding: 10px;
+    flex: 0 0 200px; /* Do not grow or shrink, set basis to 200px */
     display: flex;
     flex-direction: column; /* Align nav items vertically */
+    justify-content: start; /* Align content to the start */
+    padding: 20px;
 }
 
 #main {
-    flex-grow: 1; /* Take the remaining width */
-    background-color: #f3f0d7; /* Adjust the main content background */
+    flex-grow: 1; /* Grow to fill the remaining space */
+    background-color: #f3f0d7; /* Match the sidebar background */
     padding: 20px;
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    justify-content: space-between; /* Space out the content */
+    flex-direction: column;
+    justify-content: space-between; /* Space between the newsletter text and the image */
 }
 
 .main-image {
-    width: 100%; /* Full width */
-    height: auto; /* Adjust height to maintain aspect ratio */
-    align-self: flex-end; /* Align the image to the bottom */
-    margin: 20px 0; /* Space above the image */
+    align-self: flex-end; /* Align the image to the end of the flex container */
+    max-width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
 }
 
-ul {
-    padding: 0;
-    margin: 0;
+nav ul {
     list-style-type: none; /* Remove bullet points */
 }
 
-ul li {
-    margin-bottom: 5px; /* Reduced space between list items */
+nav li {
+    margin-bottom: 10px; /* Space between the list items */
+    text-align: left; /* Align text to the left */
 }
 
 footer {
@@ -77,6 +77,7 @@ footer {
     text-align: center;
     background-color: #D3D3D3;
     padding: 10px;
-    width: 100%;
-    position: relative; /* Position relative */
+    position: absolute; /* Position the footer at the bottom */
+    bottom: 0;
+    width: 100%; /* Full width */
 }
