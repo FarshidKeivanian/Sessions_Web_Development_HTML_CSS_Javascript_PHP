@@ -1,31 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>City Farmer - Urban Cowboy</title>
-<link rel="stylesheet" href="city-farmer-style-sidebar-NewSection-DistinctBackground.css"> <!-- Link to the external CSS file -->
-</head>
-<body>
+body {
+  font-family: Arial, sans-serif;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+}
 
-<div class="sidebar">
-  <div class="logo">
-    <img src="farmer_logo.jpg" alt="City Farmer Logo" style="max-width: 100%;">
-  </div>
+.sidebar {
+  flex-basis: 250px;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
 
-  <ul class="menu">
-    <li>Products</li>
-    <li>Order</li>
-    <li>News</li>
-    <li>Events</li>
-    <li class="new">New</li> <!-- New menu item -->
-  </ul>
-</div>
+.main-content {
+  flex-grow: 1;
+  background-color: #ffffff;
+  padding: 20px;
+}
 
-<div class="main-content">
-  <h1 class="title">City Farmer</h1>
-  <p class="subtitle">...today's urban cowboy</p>
-</div>
+.logo {
+  margin-top: 20px;
+  text-align: center;
+}
 
-</body>
-</html>
+.title {
+  color: green;
+  font-size: 32px;
+}
+
+.subtitle {
+  color: grey;
+  font-size: 24px;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.menu li {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.menu .new {
+  background-color: #d2b48c; /* Example color, you can change this */
+  color: white;
+  padding: 5px 10px;
+  font-weight: bold;
+}
