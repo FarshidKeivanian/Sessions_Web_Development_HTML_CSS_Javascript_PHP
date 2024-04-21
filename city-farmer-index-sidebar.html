@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>City Farmer - Urban Cowboy</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: left; /* Align text to the left */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox to layout the sidebar and main content */
+    min-height: 100vh; /* Minimum height to full viewport */
+  }
+  
+  .sidebar {
+    flex-basis: 250px; /* Width of the sidebar */
+    background-color: #f0f0f0; /* Background color of the sidebar */
+    padding: 20px; /* Padding inside the sidebar */
+  }
+
+  .main-content {
+    flex-grow: 1; /* Take the remaining space */
+    background-color: #ffffff; /* Background color of the main content */
+    padding: 20px; /* Padding inside the main content */
+  }
+
+  .logo {
+    margin-top: 20px; /* Adjust top margin for logo */
+    text-align: center; /* Center align the logo */
+  }
+  
+  .title {
+    color: green;
+    font-size: 32px;
+  }
+  
+  .subtitle {
+    color: grey;
+    font-size: 24px;
+  }
+  
+  .menu {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px; /* Margin at the top of the menu */
+  }
+  
+  .menu li {
+    display: block; /* Stack list items vertically */
+    margin-bottom: 10px; /* Space between menu items */
+    font-size: 18px;
+  }
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="logo">
+    <!-- You'll need to host the image and reference it here or convert it to a data URI -->
+    <img src="farmer_logo.jpg" alt="City Farmer Logo" style="max-width: 100%;">
+  </div>
+
+  <ul class="menu">
+    <li>Products</li>
+    <li>Order</li>
+    <li>News</li>
+    <li>Events</li>
+  </ul>
+</div>
+
+<div class="main-content">
+  <h1 class="title">City Farmer</h1>
+  <p class="subtitle">...today's urban cowboy</p>
+</div>
+
+</body>
+</html>
