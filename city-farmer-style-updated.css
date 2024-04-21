@@ -1,53 +1,58 @@
-/* Updated CSS content to reflect the first attached image's style */
+/* Updated CSS content to more closely match the styling of the first image */
 body {
-    color: #000000;
-    background-color: #87CEEB; /* Sky blue background */
+    color: #333;
+    background-color: #e6e6e6; /* Matching the light sky color */
     font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
 #outerwrapper {
     display: flex;
-    flex-direction: row; /* Changed to row for a side-by-side layout */
-    width: 100%; /* Full width */
+    background-color: #f3f0d7; /* The main content background */
+    max-width: 1200px; /* Approximate max width based on the image */
+    margin: 20px auto; /* Center the wrapper with some margin */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    overflow: hidden; /* Ensures the wrapper contains floated elements */
+}
+header {
+    width: 100%;
+    position: relative; /* Position relative for absolute positioned children */
+}
+.logo {
+    position: absolute; /* Absolute position within the header */
+    top: 20px;
+    left: 20px;
+    width: auto;
+    height: 80px; /* Adjusted height */
+}
+header h1, header h2 {
+    position: absolute;
+    left: 120px; /* Space for the logo */
+    top: 30px; /* Align with the logo */
+}
+#sidebar {
+    background-color: rgba(255, 255, 255, 0.5); /* Translucent sidebar */
+    width: 20%; /* Sidebar width */
+    padding: 20px;
+}
+#main {
+    width: 80%; /* Main content width */
+    padding: 20px;
+}
+.main-image {
+    width: auto; /* Full width of the content area */
+    height: 300px; /* Adjust to match the image */
+    margin: 20px 0;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
     margin: 0;
 }
-
-header {
-    background-image: url('cityscape_background.jpg'); /* Assuming you have a cityscape image */
-    color: white; /* Adjusted for visibility over background */
-    padding: 20px;
-    text-align: left;
+ul li {
+    margin-bottom: 10px; /* Space between list items */
 }
-
-#sidebar {
-    background-color: #D3D3D3; /* Slightly darker gray */
-    padding: 20px;
-    width: 25%; /* Adjust sidebar width */
-}
-
-#main {
-    background-color: #FFFFFF;
-    padding: 20px;
-    width: 75%; /* Adjust main content width */
-}
-
-.logo {
-    width: auto;
-    height: 100px; /* Adjust logo size */
-    margin-bottom: 10px; /* Add some space below the logo */
-}
-
-.main-image {
-    width: 100%; /* Full width of the content area */
-    height: auto;
-    margin: 20px 0; /* Add some space above and below the image */
-}
-
-ul {
-    flex-direction: column; /* Stack nav items vertically */
-    align-items: flex-start; /* Align items to the left */
-}
-
 footer {
     font-size: 0.75em;
     text-align: center;
