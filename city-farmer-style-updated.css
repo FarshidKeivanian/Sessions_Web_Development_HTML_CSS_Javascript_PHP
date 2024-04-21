@@ -21,8 +21,10 @@ body {
 
 header {
     background-color: #f3f0d7; /* Matching the header background with main content */
-    width: auto; /* Adjust width to content */
+    width: 100%; /* Full width */
     padding: 10px;
+    display: flex; /* Use flex to align logo and text */
+    align-items: center; /* Center items vertically */
 }
 
 .logo {
