@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  flex-basis: 250px;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.main-content {
+  flex-grow: 1;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.logo {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.title {
+  color: green;
+  font-size: 32px;
+}
+
+.subtitle {
+  color: grey;
+  font-size: 24px;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.menu li {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
