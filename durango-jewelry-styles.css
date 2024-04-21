@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #DAE5D0; /* Adjust to match the provided image's background color */
+    color: #333;
+    line-height: 1.6;
+}
+#outerwrapper {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#header {
+    text-align: center;
+}
+#navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+#navigation ul li {
+    display: inline;
+    margin-right: 20px;
+}
+#navigation a {
+    text-decoration: none;
+    color: #007B33;
+}
+#main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#main article {
+    flex: 3;
+}
+#main aside {
+    flex: 1;
+}
+#main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* To make the image circular */
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+@media (max-width: 600px) {
+    #main {
+        flex-direction: column;
+    }
+}
