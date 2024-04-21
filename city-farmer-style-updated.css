@@ -1,48 +1,58 @@
-/* Name: [Your Name], Date: [Today's Date] */
+/* Updated CSS content to reflect the first attached image's style */
 body {
-    color: #333;
-    background-color: #F5F5F5;
+    color: #000000;
+    background-color: #87CEEB; /* Sky blue background */
     font-family: "Arial", sans-serif;
 }
+
 #outerwrapper {
     display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: 0 auto;
+    flex-direction: row; /* Changed to row for a side-by-side layout */
+    width: 100%; /* Full width */
+    margin: 0;
 }
-header, footer {
-    background-color: #EAEAEA;
-    padding: 10px;
-    text-align: center;
+
+header {
+    background-image: url('cityscape_background.jpg'); /* Assuming you have a cityscape image */
+    color: white; /* Adjusted for visibility over background */
+    padding: 20px;
+    text-align: left;
 }
+
 #sidebar {
-    background-color: #D3D3D3;
-    padding: 10px;
-    width: 20%;
-    float: left;
+    background-color: #D3D3D3; /* Slightly darker gray */
+    padding: 20px;
+    width: 25%; /* Adjust sidebar width */
 }
+
 #main {
     background-color: #FFFFFF;
     padding: 20px;
-    margin-left: 25%;
+    width: 75%; /* Adjust main content width */
 }
-.logo, .main-image {
-    width: 100px;
+
+.logo {
+    width: auto;
+    height: 100px; /* Adjust logo size */
+    margin-bottom: 10px; /* Add some space below the logo */
+}
+
+.main-image {
+    width: 100%; /* Full width of the content area */
     height: auto;
+    margin: 20px 0; /* Add some space above and below the image */
 }
+
 ul {
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-    list-style-type: none;
+    flex-direction: column; /* Stack nav items vertically */
+    align-items: flex-start; /* Align items to the left */
 }
+
 footer {
     font-size: 0.75em;
     text-align: center;
-    clear: both;
     background-color: #D3D3D3;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
+    padding: 10px;
     width: 100%;
+    position: relative; /* Changed to relative for natural flow */
 }
