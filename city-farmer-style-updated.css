@@ -1,0 +1,48 @@
+/* Name: [Your Name], Date: [Today's Date] */
+body {
+    color: #333;
+    background-color: #F5F5F5;
+    font-family: "Arial", sans-serif;
+}
+#outerwrapper {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+header, footer {
+    background-color: #EAEAEA;
+    padding: 10px;
+    text-align: center;
+}
+#sidebar {
+    background-color: #D3D3D3;
+    padding: 10px;
+    width: 20%;
+    float: left;
+}
+#main {
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-left: 25%;
+}
+.logo, .main-image {
+    width: 100px;
+    height: auto;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style-type: none;
+}
+footer {
+    font-size: 0.75em;
+    text-align: center;
+    clear: both;
+    background-color: #D3D3D3;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
