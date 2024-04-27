@@ -6,7 +6,9 @@
 <body>
     <h1>PHP section below</h1>
     <?php
-        echo "Hello, this is PHP inside HTML!";
+        echo "Hello, this is PHP inside HTML!<br>";
+        print "Hello, this is PHP inside HTML!";
+
     ?>
 </body>
 </html>
