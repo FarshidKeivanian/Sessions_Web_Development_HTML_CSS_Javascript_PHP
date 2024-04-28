@@ -20,7 +20,7 @@ if ($conn->connect_error) {
 }
 
 // Include SQL file
-include_once("create_table.sql");
+include_once("create_users_table.sql");
 
 // Retrieve data from the database
 $sql = "SELECT id, firstname, lastname, email FROM users";
