@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Function to display the name and year of birth
     function displayFamilyNameAndYear($firstName, $familyName, $yearOfBirth) {
-        return "You, $firstName $familyName, were born in $yearOfBirth.";
+        return "Hello, $firstName $familyName. You were born in $yearOfBirth.";
     }
 
     // Output the greeting, suggested activity, and personal information
