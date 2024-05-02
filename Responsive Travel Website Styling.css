@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: url('images/header-background.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    background: #333;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tour-package {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    width: 30%;
+}
+
+.tour-package img {
+    width: 100%;
+    height: auto;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
