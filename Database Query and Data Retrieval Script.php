@@ -1,21 +1,18 @@
 <html>
 <body>
     <?php
-    $servername = "ict502";
+    $servername = "localhost"; // This should be 'localhost' for XAMPP
+    $dbname = "ict502"; // Database name
     $username = "root";
     $password = "";
-    
     // Create connection
-    $conn = new mysqli('localhost', $username, $password, $servername);
-    
+    $conn = new mysqli($servername, $username, $password, $dbname);
     // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-    echo "Connected successfully<br>";
-    
+    echo "Connected successfully<br>";    
     $sql = "SELECT name, country FROM test1 WHERE age=20";
-    
     // Execute the query and handle the results
     $result = $conn->query($sql);
     if ($result) {
@@ -30,7 +27,6 @@
     } else {
         echo "Error executing query: " . $conn->error;
     }
-    
     $conn->close();
     ?>
 </body>
