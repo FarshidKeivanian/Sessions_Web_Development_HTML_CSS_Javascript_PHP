@@ -1,22 +1,40 @@
 /* Styles for Steve's Screen Services - Mayer Alvarez Vivanco, 2024-05-17 */
 img {
     max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
+
+#container {
+    width: 100%;
+    padding: 0 20px;
+}
+
+#banner img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px; /* Set a maximum height if desired */
+}
+
 nav ul {
     padding: 0;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
+
 nav li {
     background-color: #000066;
     list-style-type: none;
     margin: 0.4em;
     padding: 0.5em;
 }
+
 nav li a {
     color: #FFFFFF;
     text-decoration: none;
 }
+
 .mobile {
     display: inline;
 }
