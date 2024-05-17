@@ -1,0 +1,80 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Banner styles */
+.banner {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Article, Aside, Section styles */
+main {
+    padding: 1em;
+}
+
+article, aside, section {
+    margin-bottom: 1em;
+}
+
+aside {
+    background-color: #f9f9f9;
+    padding: 1em;
+    border-left: 4px solid #4CAF50;
+}
+
+/* Figure and Figcaption styles */
+figure {
+    margin: 1em 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Three-Column Layout */
+.three-column-layout {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: #f1f1f1;
+}
+
+.three-column-layout .column {
+    background-color: #ddd;
+    padding: 1em;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+/* Opacity and Text-Shadow properties */
+.banner {
+    opacity: 0.9;
+}
+
+h1 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Overflow property */
+main {
+    overflow: auto;
+}
+
+@media (max-width: 768px) {
+    .three-column-layout {
+        flex-direction: column;
+    }
+}
