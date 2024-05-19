@@ -12,13 +12,14 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Insert a new user
-$hashed_password = password_hash("userpassword", PASSWORD_DEFAULT);
-$sql = "INSERT INTO users (username, password, firstname, lastname, age, country) VALUES ('testuser', '$hashed_password', 'John', 'Doe', 25, 'USA')";
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
+// Insert new users with plain text passwords
+$sql1 = "INSERT INTO users (username, password, firstname, lastname, age, country) VALUES ('testuser1', 'userpassword1', 'John', 'Doe', 25, 'USA')";
+$sql2 = "INSERT INTO users (username, password, firstname, lastname, age, country) VALUES ('testuser2', 'userpassword2', 'Jane', 'Doe', 28, 'Canada')";
+
+if ($conn->query($sql1) === TRUE && $conn->query($sql2) === TRUE) {
+    echo "New records created successfully";
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    echo "Error: " . $conn->error;
 }
 
 $conn->close();
