@@ -1,0 +1,52 @@
+/* Style sheet created by: Mayer Alvarez Vivanco, Today's Date */
+
+/* Style for body specifies a background color */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for header and navigation */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Fluid layout for main content */
+main {
+    margin: 2em auto;
+    max-width: 800px;
+    padding: 1em;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    header, nav ul li {
+        display: block;
+        text-align: center;
+    }
+}
