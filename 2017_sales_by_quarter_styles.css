@@ -1,0 +1,32 @@
+/* Style sheet created by: Mayer Alvarez Vivanco, Today's Date */
+
+/* Style for table */
+table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style for table, tr, th, td */
+table, tr, th, td {
+    border-collapse: collapse;
+    border: solid 0.1em #000000;
+    padding: 1em;
+}
+
+/* Style for table data */
+td {
+    text-align: center;
+}
+
+/* Style for table caption */
+caption {
+    font-size: 2em;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+/* Align text in table headers to the left */
+th {
+    text-align: left;
+}
