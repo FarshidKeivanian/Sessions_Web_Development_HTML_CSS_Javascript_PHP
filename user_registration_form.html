@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- This website template was created by: Mayer Alvarez Vivanco, Today's Date -->
+<html lang="en">
+<head>
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="user_registration_form.css">
+    <meta charset="utf-8">
+</head>
+<body>
+
+    <div id="container">
+
+        <!-- Use the main area to add the main content of the webpage -->
+        <main>
+            <form action="submit_form.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                
+                <p>Upload your file here</p>
+                <input type="file" name="file" size="20">
+                
+                <p>Example of Radio Buttons</p>
+                <input type="radio" id="option1" name="option" value="1">
+                <label for="option1">Option 1</label>
+                <input type="radio" id="option2" name="option" value="2">
+                <label for="option2">Option 2</label>
+                <input type="radio" id="option3" name="option" value="3">
+                <label for="option3">Option 3</label>
+            </form>
+        </main>
+
+        <!-- Use the footer area to add webpage footer content -->
+        <footer>
+            <p>Designed by: Mayer Alvarez Vivanco</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
