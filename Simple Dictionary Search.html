@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dictionary</title>
+</head>
+
+<body>
+  <label for="search">Search for a word </label>
+  <input id="search" type="text">
+  <button>Search</button>
+  <p></p>
+  <script>
+    const dictionary = [
+      { word: "cloudlet", definition: "A small cloud" },
+      { word: "harbinger", definition: "A sign of what is to come" },
+      { word: "paean", definition: "A song of praise" },
+      { word: "copse", definition: "A small grove of trees" },
+      { word: "frisson", definition: "A sudden fear" },
+      { word: "eddy", definition: "To whirl in circles on the wind" },
+      { word: "sirocco", definition: "A hot, dusty wind" },
+      { word: "canto", definition: "A section of a poem" },
+    ];
+    const para = document.querySelector('p');
+    const input = document.querySelector('input');
+    const btn = document.querySelector('button');
+
+    btn.addEventListener('click', () => {
+      const searchWord = input.value.toLowerCase();
+      input.focus();
+      para.textContent = '';
+
+      for (let i = 0; i < dictionary.length; i++) {
+        if (dictionary[i].word === searchWord) {
+          para.textContent = dictionary[i].definition
+          break;
+        };
+
+        if (i === dictionary.length - 1) {
+          alert("Word not found in dictionary.")
+          para.textContent = '';
+        }
+      }
+    });
+
+  </script>
+</body>
+</html>
