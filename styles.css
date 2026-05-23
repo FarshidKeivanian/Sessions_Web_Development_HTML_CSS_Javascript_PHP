@@ -1,0 +1,68 @@
+/* Reset some default browser spacing */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header section */
+header {
+    background-color: #5c4033;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Navigation links */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+/* Hover effect */
+nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Main content area */
+main {
+    padding: 20px;
+}
+
+/* Section styling */
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #5c4033;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+}
